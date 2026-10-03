@@ -19,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
   String? _error;
   
   // Gemini API Key - Replace with your own key
-  static const String _apiKey = 'AIzaSyCXAPywCi8HsErHALRMYjHRi_CRQtKjGYY';
+  static const String _apiKey = String.fromEnvironment('GEMINI_API_KEY');
 
   late final NewsVerificationService _verificationService;
 
